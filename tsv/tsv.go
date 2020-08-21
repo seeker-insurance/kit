@@ -15,7 +15,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/eyecuelab/kit/assets"
+	"github.com/seeker-insurance/kit/assets"
 )
 
 //Record represents a single line of a TSV

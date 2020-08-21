@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/eyecuelab/kit/functools"
+	"github.com/seeker-insurance/kit/functools"
 )
 
 type tagOpts []string

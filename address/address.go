@@ -4,7 +4,7 @@ package address
 import (
 	"strings"
 
-	"github.com/eyecuelab/kit/stringslice"
+	"github.com/seeker-insurance/kit/stringslice"
 )
 
 //Address represents a physical location

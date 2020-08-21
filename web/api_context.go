@@ -12,12 +12,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eyecuelab/kit/maputil"
+	"github.com/seeker-insurance/kit/maputil"
 	"github.com/google/jsonapi"
 	"github.com/labstack/echo"
-	"github.com/eyecuelab/kit/flect"
+	"github.com/seeker-insurance/kit/flect"
 	"errors"
-	"github.com/eyecuelab/kit/web/meta"
+	"github.com/seeker-insurance/kit/web/meta"
 )
 
 var reNotJsonApi = regexp.MustCompile("not a jsonapi|EOF")

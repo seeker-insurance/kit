@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/eyecuelab/kit/flect"
-	"github.com/eyecuelab/jsonapi"
+	"github.com/seeker-insurance/kit/flect"
+	"github.com/seeker-insurance/jsonapi"
 	"github.com/jinzhu/inflection"
 	"github.com/spf13/viper"
 )

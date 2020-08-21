@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/eyecuelab/kit/log"
+	"github.com/seeker-insurance/kit/log"
 )
 
 // Load loading env vars from env file

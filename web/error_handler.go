@@ -8,9 +8,9 @@ import (
 	"strconv"
 
 	"github.com/asaskevich/govalidator"
-	"github.com/eyecuelab/kit/brake"
-	"github.com/eyecuelab/kit/log"
-	"github.com/eyecuelab/kit/str"
+	"github.com/seeker-insurance/kit/brake"
+	"github.com/seeker-insurance/kit/log"
+	"github.com/seeker-insurance/kit/str"
 	"github.com/google/jsonapi"
 	"github.com/labstack/echo"
 	"github.com/lib/pq"

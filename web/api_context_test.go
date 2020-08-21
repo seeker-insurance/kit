@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/eyecuelab/kit/errorlib"
+	"github.com/seeker-insurance/kit/errorlib"
 
 	"github.com/labstack/echo"
 	"github.com/stretchr/testify/assert"

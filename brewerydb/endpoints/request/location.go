@@ -1,7 +1,7 @@
 package request
 
 import "time"
-import "github.com/eyecuelab/kit/brewerydb/structs"
+import "github.com/seeker-insurance/kit/brewerydb/structs"
 
 const (
 	errMustSetLocation BadRequestError = "must set one of the following attributes: locality, postalCode, region"

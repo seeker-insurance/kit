@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/eyecuelab/kit/config"
-	"github.com/eyecuelab/kit/log"
+	"github.com/seeker-insurance/kit/config"
+	"github.com/seeker-insurance/kit/log"
 	"github.com/sideshow/apns2"
 	"github.com/sideshow/apns2/certificate"
 	"github.com/spf13/cobra"

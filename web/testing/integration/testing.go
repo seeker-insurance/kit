@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/eyecuelab/kit/web/meta"
-	"github.com/eyecuelab/jsonapi"
+	"github.com/seeker-insurance/kit/web/meta"
+	"github.com/seeker-insurance/jsonapi"
 	"github.com/parnurzeal/gorequest"
-	"github.com/eyecuelab/kit/web/security"
+	"github.com/seeker-insurance/kit/web/security"
 )
 
 const (

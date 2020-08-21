@@ -4,7 +4,7 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/eyecuelab/kit/web/meta"
+	"github.com/seeker-insurance/kit/web/meta"
 	"github.com/jinzhu/gorm"
 	"github.com/labstack/echo"
 )

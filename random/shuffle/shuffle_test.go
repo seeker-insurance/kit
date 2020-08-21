@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/eyecuelab/kit/random"
+	"github.com/seeker-insurance/kit/random"
 )
 
 func TestBytes(t *testing.T) {

@@ -3,7 +3,7 @@ package opentable
 import (
 	"strconv"
 
-	"github.com/eyecuelab/kit/set"
+	"github.com/seeker-insurance/kit/set"
 	"github.com/parnurzeal/gorequest"
 )
 

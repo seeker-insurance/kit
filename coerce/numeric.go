@@ -5,8 +5,8 @@ package coerce
 import (
 	"math"
 
-	"github.com/eyecuelab/kit/errorlib"
-	"github.com/eyecuelab/kit/log"
+	"github.com/seeker-insurance/kit/errorlib"
+	"github.com/seeker-insurance/kit/log"
 )
 
 const (

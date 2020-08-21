@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"text/tabwriter"
 
-	"github.com/eyecuelab/kit/pretty/text"
+	"github.com/seeker-insurance/kit/pretty/text"
 )
 
 type formatter struct {

@@ -6,7 +6,7 @@ import (
 	"crypto/rand"
 	"math/big"
 
-	"github.com/eyecuelab/kit/copyslice"
+	"github.com/seeker-insurance/kit/copyslice"
 )
 
 //rint returns an int64 in the half-open interval [0, n)

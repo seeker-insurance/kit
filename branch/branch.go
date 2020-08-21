@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/eyecuelab/kit/config"
+	"github.com/seeker-insurance/kit/config"
 	"github.com/parnurzeal/gorequest"
 )
 

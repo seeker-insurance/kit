@@ -3,11 +3,11 @@ package assets
 import (
 	"testing"
 
-	"github.com/eyecuelab/kit/copyslice"
+	"github.com/seeker-insurance/kit/copyslice"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/eyecuelab/kit/errorlib"
-	"github.com/eyecuelab/kit/maputil/stringmap"
+	"github.com/seeker-insurance/kit/errorlib"
+	"github.com/seeker-insurance/kit/maputil/stringmap"
 )
 
 var testAssets = map[string][]byte{}

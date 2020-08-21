@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eyecuelab/kit/errorlib"
+	"github.com/seeker-insurance/kit/errorlib"
 )
 
 const (
