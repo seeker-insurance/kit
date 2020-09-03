@@ -7,14 +7,15 @@ import (
 	"net/http"
 	"strconv"
 
+	"database/sql"
+
 	"github.com/asaskevich/govalidator"
-	"github.com/seeker-insurance/kit/brake"
-	"github.com/seeker-insurance/kit/log"
-	"github.com/seeker-insurance/kit/str"
 	"github.com/google/jsonapi"
 	"github.com/labstack/echo"
 	"github.com/lib/pq"
-	"database/sql"
+	"github.com/seeker-insurance/kit/brake"
+	"github.com/seeker-insurance/kit/log"
+	"github.com/seeker-insurance/kit/str"
 )
 
 //testCode is for internal testing

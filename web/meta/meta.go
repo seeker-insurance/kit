@@ -3,6 +3,7 @@ package meta
 import (
 	"fmt"
 
+	"github.com/seeker-insurance/kit/web/pagination"
 	"github.com/spf13/viper"
 )
 
@@ -26,24 +27,18 @@ type (
 	}
 
 	JsonAPIField struct {
-		Name      string        `json:"name"`
-		InputType string        `json:"type"`
-		Value     interface{}   `json:"value,omitempty"`
-		Required  bool          `json:"required"`
-		Options   []FieldOption `json:"options,omitempty"`
-		Data      *Pagination   `json:"data,omitempty"`
+		Name      string                 `json:"name"`
+		InputType string                 `json:"type"`
+		Value     interface{}            `json:"value,omitempty"`
+		Required  bool                   `json:"required"`
+		Options   []FieldOption          `json:"options,omitempty"`
+		Data      *pagination.Pagination `json:"data,omitempty"`
 	}
 
 	FieldOption struct {
 		Label string                 `json:"label,omitempty"`
 		Value interface{}            `json:"value"`
 		Meta  map[string]interface{} `json:"meta,omitempty"`
-	}
-
-	Pagination struct {
-		Count int `json:"item_count"`
-		Max   int `json:"max"`
-		Page  int `json:"page"`
 	}
 )
 
@@ -128,7 +123,7 @@ func FieldOptionsFromValues(values ...string) []FieldOption {
 }
 
 // Pagination add pagination meta to action
-func (a *JsonAPIAction) Pagination(data *Pagination) *JsonAPIAction {
+func (a *JsonAPIAction) Pagination(data *pagination.Pagination) *JsonAPIAction {
 	f := JsonAPIField{
 		Name:      "page",
 		InputType: string(InputNumber),
