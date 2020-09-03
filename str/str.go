@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/eyecuelab/kit/runeset"
+	"github.com/seeker-insurance/kit/runeset"
 )
 
 //RemoveRunes removes any runes listed from the string.

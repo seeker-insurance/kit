@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	valid "github.com/asaskevich/govalidator"
-	"github.com/eyecuelab/kit/web"
+	"github.com/seeker-insurance/kit/web"
 	"github.com/facebookgo/grace/gracehttp"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"

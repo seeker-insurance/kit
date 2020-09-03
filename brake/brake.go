@@ -10,8 +10,8 @@ import (
 	"sync"
 
 	"github.com/airbrake/gobrake"
-	"github.com/eyecuelab/kit/functools"
-	"github.com/eyecuelab/kit/log"
+	"github.com/seeker-insurance/kit/functools"
+	"github.com/seeker-insurance/kit/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

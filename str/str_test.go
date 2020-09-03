@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/eyecuelab/kit/pretty"
+	"github.com/seeker-insurance/kit/pretty"
 	"github.com/stretchr/testify/assert"
 )
 

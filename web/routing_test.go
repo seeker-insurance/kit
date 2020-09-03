@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/eyecuelab/kit/pretty"
+	"github.com/seeker-insurance/kit/pretty"
 	"github.com/labstack/echo"
 	"github.com/stretchr/testify/assert"
 )

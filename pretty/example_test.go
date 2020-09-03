@@ -3,7 +3,7 @@ package pretty_test
 import (
 	"fmt"
 
-	"github.com/eyecuelab/kit/pretty"
+	"github.com/seeker-insurance/kit/pretty"
 )
 
 func Example() {

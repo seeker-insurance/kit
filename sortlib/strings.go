@@ -3,7 +3,7 @@ package sortlib
 import (
 	"sort"
 
-	"github.com/eyecuelab/kit/sortlib/sortable"
+	"github.com/seeker-insurance/kit/sortlib/sortable"
 )
 
 //Bytes returns a sorted copy of the string, in ascending order (by bytes).

@@ -3,8 +3,8 @@ package sortlib
 import (
 	"sort"
 
-	"github.com/eyecuelab/kit/copyslice"
-	"github.com/eyecuelab/kit/sortlib/sortable"
+	"github.com/seeker-insurance/kit/copyslice"
+	"github.com/seeker-insurance/kit/sortlib/sortable"
 )
 
 //Int creates a sorted copy of the slice of ints.

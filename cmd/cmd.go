@@ -2,11 +2,11 @@
 package cmd
 
 import (
-	"github.com/eyecuelab/kit/assets"
-	"github.com/eyecuelab/kit/cmd/api"
-	"github.com/eyecuelab/kit/cmd/migrate"
-	"github.com/eyecuelab/kit/config"
-	"github.com/eyecuelab/kit/log"
+	"github.com/seeker-insurance/kit/assets"
+	"github.com/seeker-insurance/kit/cmd/api"
+	"github.com/seeker-insurance/kit/cmd/migrate"
+	"github.com/seeker-insurance/kit/config"
+	"github.com/seeker-insurance/kit/log"
 	"github.com/spf13/cobra"
 )
 

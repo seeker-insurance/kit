@@ -1,7 +1,7 @@
 package assets
 
 import (
-	"github.com/eyecuelab/kit/errorlib"
+	"github.com/seeker-insurance/kit/errorlib"
 )
 
 type (

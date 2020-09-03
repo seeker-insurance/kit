@@ -3,7 +3,7 @@ package address
 import (
 	"strings"
 
-	"github.com/eyecuelab/kit/str"
+	"github.com/seeker-insurance/kit/str"
 )
 
 func normalizeComponent(s string) string {

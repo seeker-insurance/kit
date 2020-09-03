@@ -2,7 +2,7 @@
 package imath
 
 import "math/rand"
-import "github.com/eyecuelab/kit/imath/operator"
+import "github.com/seeker-insurance/kit/imath/operator"
 
 const (
 	is64bit = uint64(^uint(0)) == ^uint64(0)

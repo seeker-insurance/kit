@@ -3,7 +3,7 @@ package operator
 import (
 	"testing"
 
-	"github.com/eyecuelab/kit/random"
+	"github.com/seeker-insurance/kit/random"
 	"github.com/stretchr/testify/assert"
 )
 

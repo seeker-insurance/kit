@@ -4,7 +4,7 @@ package errorlib
 import (
 	"errors"
 
-	"github.com/eyecuelab/kit/log"
+	"github.com/seeker-insurance/kit/log"
 )
 
 //ErrorString is a string with an Error() method. This lets you declare errors as visible compile-time constants,

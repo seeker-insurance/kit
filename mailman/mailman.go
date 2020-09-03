@@ -8,7 +8,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/eyecuelab/kit/assets"
+	"github.com/seeker-insurance/kit/assets"
 	"github.com/spf13/viper"
 )
 
