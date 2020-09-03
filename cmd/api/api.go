@@ -48,11 +48,3 @@ func run(cmd *cobra.Command, args []string) {
 
 	server.Start(Port, Host)
 }
-
-func checkMigrations() {
-	if c, err := migrate.PendingMigrationCount(); err != nil {
-		log.Fatal(err)
-	} else if c > 0 {
-		log.Fatalf("%d Pending Migration(s), run migrations or use check-migrations=0", c)
-	}
-}

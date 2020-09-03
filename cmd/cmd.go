@@ -4,7 +4,6 @@ package cmd
 import (
 	"github.com/seeker-insurance/kit/assets"
 	"github.com/seeker-insurance/kit/cmd/api"
-	"github.com/seeker-insurance/kit/cmd/migrate"
 	"github.com/seeker-insurance/kit/config"
 	"github.com/seeker-insurance/kit/log"
 	"github.com/spf13/cobra"
@@ -56,5 +55,4 @@ func addRoot(cmd *cobra.Command) {
 
 func init() {
 	availableCommands["api"] = api.ApiCmd
-	availableCommands["migrate"] = migrate.MigrateCmd
 }
