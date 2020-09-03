@@ -9,11 +9,11 @@ import (
 
 	"github.com/asaskevich/govalidator"
 
-	"github.com/eyecuelab/jsonapi"
 	"github.com/lib/pq"
+	"github.com/seeker-insurance/jsonapi"
 
-	"github.com/seeker-insurance/kit/errorlib"
 	"github.com/labstack/echo"
+	"github.com/seeker-insurance/kit/errorlib"
 	"github.com/stretchr/testify/assert"
 )
 

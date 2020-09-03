@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/eyecuelab/jsonapi"
+	"github.com/seeker-insurance/jsonapi"
 	"github.com/labstack/echo"
 	"github.com/spf13/viper"
 )
