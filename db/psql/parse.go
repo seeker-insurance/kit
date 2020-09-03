@@ -6,7 +6,7 @@ import (
 	"html/template"
 	"strings"
 
-	"github.com/eyecuelab/kit/assets"
+	"github.com/seeker-insurance/kit/assets"
 )
 
 type QueryParser struct {

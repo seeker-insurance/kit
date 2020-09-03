@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/eyecuelab/kit/assets"
-	"github.com/eyecuelab/kit/db/psql"
-	"github.com/eyecuelab/kit/log"
+	"github.com/seeker-insurance/kit/assets"
+	"github.com/seeker-insurance/kit/db/psql"
+	"github.com/seeker-insurance/kit/log"
 	migrate "github.com/rubenv/sql-migrate"
 	"github.com/spf13/cobra"
 )

@@ -3,7 +3,7 @@ package imath
 import (
 	"testing"
 
-	"github.com/eyecuelab/kit/imath/operator"
+	"github.com/seeker-insurance/kit/imath/operator"
 	"github.com/stretchr/testify/assert"
 )
 

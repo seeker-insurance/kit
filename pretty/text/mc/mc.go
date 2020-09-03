@@ -15,7 +15,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/eyecuelab/kit/pretty/text/colwriter"
+	"github.com/seeker-insurance/kit/pretty/text/colwriter"
 	"github.com/kr/pty"
 )
 

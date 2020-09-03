@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/eyecuelab/kit/runeset"
+	"github.com/seeker-insurance/kit/runeset"
 	"golang.org/x/text/unicode/norm"
 )
 

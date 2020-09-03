@@ -1,8 +1,8 @@
 package address
 
 import (
-	"github.com/eyecuelab/kit/str"
-	"github.com/eyecuelab/kit/stringslice"
+	"github.com/seeker-insurance/kit/str"
+	"github.com/seeker-insurance/kit/stringslice"
 )
 
 //TotalDistance returns the sum of the levenshtein distance of the components of the addresses.

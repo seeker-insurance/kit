@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/eyecuelab/kit/flect"
-	"github.com/eyecuelab/kit/islice"
-	"github.com/eyecuelab/kit/stringslice"
+	"github.com/seeker-insurance/kit/flect"
+	"github.com/seeker-insurance/kit/islice"
+	"github.com/seeker-insurance/kit/stringslice"
 	"github.com/jmoiron/sqlx"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"

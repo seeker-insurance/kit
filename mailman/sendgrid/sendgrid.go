@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/eyecuelab/kit/mailman"
+	"github.com/seeker-insurance/kit/mailman"
 	"github.com/sendgrid/rest"
 	"github.com/sendgrid/sendgrid-go"
 	"github.com/sendgrid/sendgrid-go/helpers/mail"

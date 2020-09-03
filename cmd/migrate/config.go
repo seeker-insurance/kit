@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"text/template"
 
-	"github.com/eyecuelab/kit/goenv"
+	"github.com/seeker-insurance/kit/goenv"
 	"github.com/spf13/viper"
 )
 

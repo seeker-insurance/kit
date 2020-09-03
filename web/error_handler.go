@@ -7,14 +7,15 @@ import (
 	"net/http"
 	"strconv"
 
+	"database/sql"
+
 	"github.com/asaskevich/govalidator"
-	"github.com/eyecuelab/kit/brake"
-	"github.com/eyecuelab/kit/log"
-	"github.com/eyecuelab/kit/str"
-	"github.com/eyecuelab/jsonapi"
+	"github.com/google/jsonapi"
 	"github.com/labstack/echo"
 	"github.com/lib/pq"
-	"database/sql"
+	"github.com/seeker-insurance/kit/brake"
+	"github.com/seeker-insurance/kit/log"
+	"github.com/seeker-insurance/kit/str"
 )
 
 //testCode is for internal testing

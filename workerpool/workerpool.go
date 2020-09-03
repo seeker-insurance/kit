@@ -2,7 +2,7 @@ package workerpool
 
 import (
 	"sync"
-	"github.com/eyecuelab/kit/brake"
+	"github.com/seeker-insurance/kit/brake"
 	"sync/atomic"
 	"fmt"
 )

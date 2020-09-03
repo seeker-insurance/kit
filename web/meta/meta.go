@@ -3,9 +3,8 @@ package meta
 import (
 	"fmt"
 
+	"github.com/seeker-insurance/kit/web/pagination"
 	"github.com/spf13/viper"
-	"github.com/eyecuelab/jsonapi"
-	"github.com/eyecuelab/kit/web/pagination"
 )
 
 type (
@@ -28,12 +27,12 @@ type (
 	}
 
 	JsonAPIField struct {
-		Name      string        `json:"name"`
-		InputType string        `json:"type"`
-		Value     interface{}   `json:"value,omitempty"`
-		Required  bool          `json:"required"`
-		Options   []FieldOption `json:"options,omitempty"`
-		Data      *pagination.Pagination   `json:"data,omitempty"`
+		Name      string                 `json:"name"`
+		InputType string                 `json:"type"`
+		Value     interface{}            `json:"value,omitempty"`
+		Required  bool                   `json:"required"`
+		Options   []FieldOption          `json:"options,omitempty"`
+		Data      *pagination.Pagination `json:"data,omitempty"`
 	}
 
 	FieldOption struct {
@@ -76,13 +75,13 @@ func (ah *ActionHolder) AddAction(m method, name, urlHelper string, params ...in
 func (a *JsonAPIAction) RelFields(typeName string) *JsonAPIAction {
 	fs := []JsonAPIField{
 		{
-			Name:      "type",
-			Value:     typeName,
-			Required:  true,
+			Name:     "type",
+			Value:    typeName,
+			Required: true,
 		},
 		{
-			Name:      "id",
-			Required:  true,
+			Name:     "id",
+			Required: true,
 		},
 	}
 	a.Relationship = true
@@ -115,7 +114,7 @@ func (a *JsonAPIAction) FieldWithOpts(name string, inputType inputType, value in
 	return a
 }
 
-func FieldOptionsFromValues(values ...string) []FieldOption{
+func FieldOptionsFromValues(values ...string) []FieldOption {
 	opts := make([]FieldOption, len(values))
 	for i, v := range values {
 		opts[i] = FieldOption{Value: v}
@@ -134,11 +133,6 @@ func (a *JsonAPIAction) Pagination(data *pagination.Pagination) *JsonAPIAction {
 	}
 	a.Fields = append(a.Fields, f)
 	return a
-}
-
-// RenderActions ...
-func (ah *ActionHolder) RenderActions() *jsonapi.Meta {
-	return &jsonapi.Meta{"actions": *ah}
 }
 
 // APIURL full api url for the path

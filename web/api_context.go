@@ -12,12 +12,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eyecuelab/kit/maputil"
-	"github.com/eyecuelab/jsonapi"
-	"github.com/labstack/echo"
-	"github.com/eyecuelab/kit/flect"
 	"errors"
-	"github.com/eyecuelab/kit/web/pagination"
+
+	"github.com/google/jsonapi"
+	"github.com/labstack/echo"
+	"github.com/seeker-insurance/kit/flect"
+	"github.com/seeker-insurance/kit/maputil"
+	"github.com/seeker-insurance/kit/web/pagination"
 )
 
 var reNotJsonApi = regexp.MustCompile("not a jsonapi|EOF")
@@ -261,7 +262,7 @@ func extendAndExtract(i interface{}, page *pagination.Pagination, extendData int
 	if err := apply(i, page, extendData); err != nil {
 		return nil, err
 	}
-	return i,nil
+	return i, nil
 }
 
 func (c *apiContext) JsonApiOK(i interface{}, extendData ...interface{}) error {

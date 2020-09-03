@@ -1,8 +1,8 @@
 package redis
 
 import (
-	"github.com/eyecuelab/kit/config"
-	"github.com/eyecuelab/kit/log"
+	"github.com/seeker-insurance/kit/config"
+	"github.com/seeker-insurance/kit/log"
 	r "github.com/go-redis/redis"
 	"github.com/spf13/cobra"
 )

@@ -3,7 +3,7 @@ package str
 import (
 	"bytes"
 
-	"github.com/eyecuelab/kit/runeset"
+	"github.com/seeker-insurance/kit/runeset"
 )
 
 const (

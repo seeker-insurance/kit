@@ -1,9 +1,9 @@
 package api
 
 import (
-	"github.com/eyecuelab/kit/cmd/migrate"
-	"github.com/eyecuelab/kit/log"
-	"github.com/eyecuelab/kit/web/server"
+	"github.com/seeker-insurance/kit/cmd/migrate"
+	"github.com/seeker-insurance/kit/log"
+	"github.com/seeker-insurance/kit/web/server"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"

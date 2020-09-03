@@ -13,7 +13,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
-	"github.com/eyecuelab/kit/log"
+	"github.com/seeker-insurance/kit/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

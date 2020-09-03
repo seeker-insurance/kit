@@ -4,10 +4,10 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/jinzhu/gorm"
-	"github.com/labstack/echo"
 	"net/url"
 
+	"github.com/jinzhu/gorm"
+	"github.com/labstack/echo"
 )
 
 type (
@@ -17,13 +17,12 @@ type (
 		Page    int `json:"page"`
 		PerPage int
 		Offset  int
-		Url   url.URL
+		Url     url.URL
 	}
-
 )
 
 func (p *Pagination) Links() map[string]string {
-	pageValues := map[string]int{ "self": p.Page }
+	pageValues := map[string]int{"self": p.Page}
 
 	if p.Max != 1 {
 		pageValues["first"] = 1

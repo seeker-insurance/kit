@@ -3,7 +3,7 @@ package log
 
 import (
 	"github.com/davecgh/go-spew/spew"
-	"github.com/eyecuelab/kit/goenv"
+	"github.com/seeker-insurance/kit/goenv"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 )

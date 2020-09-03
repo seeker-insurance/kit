@@ -2,7 +2,7 @@
 package umath
 
 import (
-	"github.com/eyecuelab/kit/imath"
+	"github.com/seeker-insurance/kit/imath"
 )
 
 const (
