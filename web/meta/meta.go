@@ -2,12 +2,7 @@ package meta
 
 import (
 	"fmt"
-	"reflect"
-	"strings"
 
-	"github.com/seeker-insurance/kit/flect"
-	"github.com/seeker-insurance/jsonapi"
-	"github.com/jinzhu/inflection"
 	"github.com/spf13/viper"
 )
 
@@ -85,13 +80,13 @@ func (ah *ActionHolder) AddAction(m method, name, urlHelper string, params ...in
 func (a *JsonAPIAction) RelFields(typeName string) *JsonAPIAction {
 	fs := []JsonAPIField{
 		{
-			Name:      "type",
-			Value:     typeName,
-			Required:  true,
+			Name:     "type",
+			Value:    typeName,
+			Required: true,
 		},
 		{
-			Name:      "id",
-			Required:  true,
+			Name:     "id",
+			Required: true,
 		},
 	}
 	a.Relationship = true
@@ -124,7 +119,7 @@ func (a *JsonAPIAction) FieldWithOpts(name string, inputType inputType, value in
 	return a
 }
 
-func FieldOptionsFromValues(values ...string) []FieldOption{
+func FieldOptionsFromValues(values ...string) []FieldOption {
 	opts := make([]FieldOption, len(values))
 	for i, v := range values {
 		opts[i] = FieldOption{Value: v}
@@ -145,48 +140,7 @@ func (a *JsonAPIAction) Pagination(data *Pagination) *JsonAPIAction {
 	return a
 }
 
-// RenderActions ...
-func (ah *ActionHolder) RenderActions() *jsonapi.Meta {
-	return &jsonapi.Meta{"actions": *ah}
-}
-
 // APIURL full api url for the path
 func APIURL(path string) string {
 	return fmt.Sprintf("%s%s", viper.GetString("root_url"), path)
-}
-
-// JSONApiSelfLink self link helper
-func JSONApiSelfLink(i interface{}) *jsonapi.Links {
-	name := reflect.TypeOf(i).Name()
-	name = inflection.Plural(strings.ToLower(name))
-
-	id := reflect.ValueOf(i).FieldByName("ID").Interface()
-
-	return &jsonapi.Links{
-		"self": jsonapi.Link{
-			Href: fmt.Sprintf("/%v/%v", name, id)},
-	}
-}
-
-// JSONApiRefLink ref link helper
-func JSONApiRefLink(i interface{}, rel string) *jsonapi.Links {
-	fields := flect.Fields(reflect.ValueOf(i))
-	name := reflect.TypeOf(i).Name()
-	id := reflect.ValueOf(i).FieldByName("ID").Interface()
-	for _, f := range fields {
-		value, opts, ok := flect.TagValues(f.Tag, "jsonapi")
-		if ok && value == "relation" && opts.HasOption(rel) {
-			if _, _, ok := flect.TagValues(f.Tag, "link"); ok {
-				return &jsonapi.Links{
-					"related": fmt.Sprintf(
-						"/%v/%v/%v",
-						strings.ToLower(inflection.Plural(name)),
-						id,
-						strings.ToLower(inflection.Plural(f.Name)),
-					),
-				}
-			}
-		}
-	}
-	return &jsonapi.Links{}
 }

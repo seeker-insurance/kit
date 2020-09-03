@@ -5,9 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/seeker-insurance/kit/web/meta"
-	"github.com/seeker-insurance/jsonapi"
 	"github.com/parnurzeal/gorequest"
+	"github.com/seeker-insurance/kit/web/meta"
 	"github.com/seeker-insurance/kit/web/security"
 )
 
@@ -31,30 +30,29 @@ type (
 	}
 	// JSONAPIOneResp ...
 	JSONAPIOneResp struct {
-		Data     JSONAPIRespData        `json:"data"`
-		Errors   []*jsonapi.ErrorObject `json:"errors"`
+		Data     JSONAPIRespData `json:"data"`
+		Errors   []*interface{}  `json:"errors"`
 		Included []JSONAPIRespData
 	}
 	// JSONAPIManyResp ...
 	JSONAPIManyResp struct {
-		Data     []JSONAPIRespData      `json:"data"`
-		Meta     JSONAPIRespMeta        `json:"meta"`
-		Errors   []*jsonapi.ErrorObject `json:"errors"`
+		Data     []JSONAPIRespData `json:"data"`
+		Meta     JSONAPIRespMeta   `json:"meta"`
+		Errors   []*interface{}    `json:"errors"`
 		Included []JSONAPIRespData
 	}
 
 	AuthRequester struct {
 		Requester
-		test *testing.T
+		test  *testing.T
 		token string
 	}
 
 	Requester struct {
-
 	}
 )
 
-func NewAuthRequester(t *testing.T, userId int) *AuthRequester{
+func NewAuthRequester(t *testing.T, userId int) *AuthRequester {
 	token, err := security.JwtToken(userId)
 	if err != nil {
 		t.Errorf("error getting jwt: %s", err)
