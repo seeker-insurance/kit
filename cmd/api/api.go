@@ -1,10 +1,8 @@
 package api
 
 import (
-	"github.com/seeker-insurance/kit/cmd/migrate"
 	"github.com/seeker-insurance/kit/log"
 	"github.com/seeker-insurance/kit/web/server"
-
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
@@ -38,10 +36,6 @@ func init() {
 }
 
 func run(cmd *cobra.Command, args []string) {
-	if checkMigs {
-		checkMigrations()
-	}
-
 	if viper.GetInt("port") > 0 {
 		Port = viper.GetInt("port")
 	}
