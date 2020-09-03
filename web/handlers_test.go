@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/seeker-insurance/jsonapi"
 	"github.com/labstack/echo"
+	"github.com/seeker-insurance/kit/jsonapi"
 	"github.com/stretchr/testify/assert"
 )
 

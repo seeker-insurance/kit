@@ -8,12 +8,10 @@ import (
 	"testing"
 
 	"github.com/asaskevich/govalidator"
-
-	"github.com/lib/pq"
-	"github.com/seeker-insurance/jsonapi"
-
 	"github.com/labstack/echo"
+	"github.com/lib/pq"
 	"github.com/seeker-insurance/kit/errorlib"
+	"github.com/seeker-insurance/kit/jsonapi"
 	"github.com/stretchr/testify/assert"
 )
 

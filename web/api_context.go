@@ -15,8 +15,8 @@ import (
 	"errors"
 
 	"github.com/labstack/echo"
-	"github.com/seeker-insurance/jsonapi"
 	"github.com/seeker-insurance/kit/flect"
+	"github.com/seeker-insurance/kit/jsonapi"
 	"github.com/seeker-insurance/kit/maputil"
 	"github.com/seeker-insurance/kit/web/pagination"
 )
