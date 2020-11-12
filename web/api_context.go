@@ -207,9 +207,6 @@ func (c *apiContext) BindAndValidate(i interface{}) error {
 // }
 
 func (c *apiContext) JsonApi(i interface{}, status int) error {
-	slice := reflect.ValueOf(i)
-	fmt.Println(slice.Type())
-
 	var buf bytes.Buffer
 	if err := jsonapi.MarshalPayload(&buf, i); err != nil {
 		return err
