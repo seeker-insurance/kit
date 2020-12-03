@@ -5,11 +5,9 @@ import (
 	"errors"
 	"fmt"
 	"path"
-	"strings"
 	"text/template"
 
 	"github.com/seeker-insurance/kit/assets"
-	"github.com/spf13/viper"
 )
 
 type Address struct {
@@ -121,11 +119,6 @@ func RegisterTemplate(keys ...string) error {
 }
 
 func Send(to *Address, templateKey string, vars *MergeVars) error {
-	substr := viper.GetString("email_whitelist_pattern")
-	if substr != "" && !strings.Contains(to.Email, substr) {
-		return nil
-	}
-
 	if mailer == nil {
 		return errors.New("Mail has not been configured")
 	}
