@@ -40,6 +40,12 @@ type (
 		Value interface{}            `json:"value"`
 		Meta  map[string]interface{} `json:"meta,omitempty"`
 	}
+
+	Pagination struct {
+		Count int `json:"item_count"`
+		Max   int `json:"max"`
+		Page  int `json:"page"`
+	}
 )
 
 const (
