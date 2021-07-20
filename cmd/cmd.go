@@ -50,8 +50,10 @@ func addRoot(cmd *cobra.Command) {
 	Root.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $PWD/config.yaml)")
 	Root.PersistentFlags().BoolVar(&NoDb, "nodb", false, "allow DB-less execution")
 
-	if len(childCommands) > 0 {
-		Root.AddCommand(childCommands...)
+	for _, c := range childCommands {
+		if c != nil {
+			Root.AddCommand(c)
+		}
 	}
 }
 
