@@ -1,6 +1,7 @@
 package api
 
 import (
+	"github.com/seeker-insurance/kit/cmd/migrate"
 	"github.com/seeker-insurance/kit/log"
 	"github.com/seeker-insurance/kit/web/server"
 	"github.com/spf13/cobra"
@@ -36,6 +37,10 @@ func init() {
 }
 
 func run(cmd *cobra.Command, args []string) {
+	if checkMigs {
+		checkMigrations()
+	}
+
 	if viper.GetInt("port") > 0 {
 		Port = viper.GetInt("port")
 	}
@@ -47,4 +52,12 @@ func run(cmd *cobra.Command, args []string) {
 	log.Infof("Serving API on port %d...", Port)
 
 	server.Start(Port, Host)
+}
+
+func checkMigrations() {
+	if c, err := migrate.PendingMigrationCount(); err != nil {
+		log.Fatal(err)
+	} else if c > 0 {
+		log.Fatalf("%d Pending Migration(s), run migrations or use check-migrations=0", c)
+	}
 }
